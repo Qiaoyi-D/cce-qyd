@@ -1,0 +1,20 @@
+plt.plot(insurance['charges'], color='red')
+plt.title('charges')
+plt.ylabel('charges')
+plt.savefig(f'charges_plot.png', format='png')
+plt.clf()
+
+plt.hist(insurance['bmi'], bins=3, color='g')
+plt.title('bmi')
+plt.xlabel('bmi')
+plt.ylabel('sex')
+plt.savefig(f'bmi_hist.png', format='png')
+plt.clf()
+
+plt.scatter(titanic['Age'], titanic['charges'], color='b')
+plt.title('Age to charges')
+plt.xlabel('Age')
+plt.ylabel('charges')
+plt.savefig(f'age_charge_scatter.png', format='png')
+
+plt.close()
